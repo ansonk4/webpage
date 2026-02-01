@@ -29,7 +29,9 @@ jobs:
           typst --version
 
       - name: Build site
-        run: make html
+        run: |
+          make html
+          ./fix-paths.sh
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
