@@ -1,1 +1,11 @@
 /* Modify this file to add your own custom styles */
+
+/* Fix navigation menu spacing for GitHub Pages */
+header nav {
+    display: flex !important;
+    gap: 1em !important;
+}
+
+header nav a {
+    margin-right: 1em !important;
+}
