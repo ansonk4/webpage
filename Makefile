@@ -6,6 +6,7 @@ HTML_FILES := $(patsubst content/%.typ,_site/%.html,$(TYP_FILES))
 
 # The main target 'html' depends on all generated HTML files and assets
 html: $(HTML_FILES) assets
+	./fix-paths.sh
 
 # Pattern rule to compile .typ files to .html files
 # $< is the first prerequisite (the .typ file)
